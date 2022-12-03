@@ -1,0 +1,42 @@
+@mixin content-box {
+  width: 100%;
+  margin: 0 auto 1rem;
+  border-radius: 1rem;
+}
+
+@mixin person-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin person-portret {
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+@mixin person-name {
+  font-size: 1.5rem;
+  color: $primaryColor4;
+}
+
+@mixin person-status {
+  font-size: 1.2rem;
+  color: $neutralColor1;
+}
+
+@mixin first-paragraph {
+  padding: 1rem;
+  font-size: clamp(1.3rem, 6vw, 2rem);
+  font-weight: bold;
+  color: $primaryColor4;
+  text-align: left;
+}
+
+@mixin second-paragraph {
+  padding: 1rem;
+  font-size: clamp(1.2rem, 6vw, 1.9rem);
+  color: $neutralColor1;
+}
